@@ -1,0 +1,51 @@
+.tile-field{
+  position:absolute;
+  inset:0 0 38% 0;
+  background-color:#557b49;
+  background-image:
+    radial-gradient(circle at 18% 26%,rgba(180,93,38,.55) 0 2px,transparent 3px),
+    radial-gradient(circle at 52% 67%,rgba(168,78,32,.45) 0 2px,transparent 3px),
+    radial-gradient(circle at 78% 34%,rgba(190,104,42,.5) 0 2px,transparent 3px),
+    linear-gradient(180deg,transparent 0 calc(50% - 1px),rgba(96,70,42,.72) calc(50% - 1px) calc(50% + 1px),transparent calc(50% + 1px)),
+    repeating-linear-gradient(90deg,
+      #3f765c 0 28px,
+      rgba(84,58,35,.78) 28px 30px,
+      #648748 30px 58px,
+      rgba(84,58,35,.78) 58px 60px,
+      #4d805a 60px 88px,
+      rgba(84,58,35,.78) 88px 90px,
+      #7d9347 90px 118px,
+      rgba(84,58,35,.78) 118px 120px,
+      #47785c 120px 148px,
+      rgba(84,58,35,.78) 148px 150px,
+      #6d8645 150px 178px,
+      rgba(84,58,35,.78) 178px 180px,
+      #3f7c5b 180px 208px,
+      rgba(84,58,35,.78) 208px 210px,
+      #85994d 210px 238px,
+      rgba(84,58,35,.78) 238px 240px
+    );
+  background-size:240px 180px,260px 220px,310px 190px,100% 100%,240px 100%;
+  box-shadow:inset 0 0 55px rgba(32,52,37,.24);
+}
+.tile-field:before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(100deg,transparent 0 12%,rgba(255,255,255,.05) 16%,transparent 22% 52%,rgba(255,255,255,.16) 58%,transparent 66%),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 12px,transparent 12px 30px),
+    linear-gradient(180deg,rgba(126,150,87,.08),rgba(40,76,55,.12));
+  mix-blend-mode:screen;
+}
+.tile-field:after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse at 12% 38%,rgba(167,185,77,.24),transparent 20%),
+    radial-gradient(ellipse at 42% 62%,rgba(52,119,89,.28),transparent 22%),
+    radial-gradient(ellipse at 70% 28%,rgba(181,196,83,.22),transparent 18%),
+    radial-gradient(ellipse at 88% 60%,rgba(255,255,255,.14),transparent 16%);
+  opacity:.9;
+}
