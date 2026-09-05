@@ -1,251 +1,71 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Les petites créations de Kaplou : un atelier de pièces uniques, d'objets sauvés, de peintures et d'idées qui ont trouvé une forme."
-    />
-    <meta property="og:title" content="Les petites créations de Kaplou" />
-    <meta
-      property="og:description"
-      content="Entrez dans l'atelier de Kaplou et découvrez des pièces uniques avec une histoire."
-    />
-    <meta property="og:type" content="website" />
-    <title>Les petites créations de Kaplou</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="#top" aria-label="Retour à l'accueil">
-          <span class="brand-mark">K</span>
-          <span>Kaplou</span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="main-navigation"
-          aria-label="Ouvrir le menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav id="main-navigation" class="main-navigation" aria-label="Navigation principale">
-          <a href="#atelier">L'atelier</a>
-          <a href="#nouveautes">Nouveautés</a>
-          <a href="#atelier" data-filter-link="Dessins &amp; peintures">Dessins &amp; peintures</a>
-          <a href="#atelier" data-filter-link="Collages &amp; papier">Collages &amp; papier</a>
-          <a href="#atelier" data-filter-link="Sculptures">Sculptures</a>
-          <a href="#atelier" data-filter-link="Objets &amp; mobilier transformés">Objets transformés</a>
-          <a href="#a-propos">À propos</a>
-          <a href="#contact">Écrire à Kaplou</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Petite boutique & objets merveilleux</p>
-            <h1 id="hero-title">
-              Les petites
-              <span>créations</span>
-              de Kaplou<span class="dot">.</span>
-            </h1>
-            <p class="hero-introduction">
-              Des dessins, des peintures, des collages puis des objets trouvés, transformés.
-              Chaque pièce est unique, faite lentement, puis prête à vivre ailleurs.
-            </p>
-            <a class="button button-primary" href="#atelier">
-              Entrer dans l'atelier
-              <span aria-hidden="true">↓</span>
-            </a>
-          </div>
-
-          <div class="hero-illustration" aria-label="Illustration d'un carnet et de petits objets de l'atelier" role="img">
-            <div class="paper-shadow"></div>
-            <div class="notebook">
-              <div class="notebook-page">
-                <span class="page-line line-one"></span>
-                <span class="page-line line-two"></span>
-                <span class="page-line line-three"></span>
-                <span class="page-stamp">atelier<br />Kaplou</span>
-                <svg viewBox="0 0 220 180" aria-hidden="true">
-                  <path class="sketch" d="M34 128c31-38 52-52 73-48 18 4 22 24 45 22 16-1 21-16 35-26" />
-                  <path class="sketch" d="M42 138c31 2 58 0 91-14 21-9 35-10 50-1" />
-                  <path class="sketch-light" d="M76 42c9 13 10 29 2 44M88 43c11 11 14 23 11 38" />
-                  <circle class="sketch-sun" cx="160" cy="51" r="18" />
-                </svg>
-              </div>
-            </div>
-            <span class="hero-object hero-bird" aria-hidden="true"></span>
-            <span class="hero-object hero-sun" aria-hidden="true"></span>
-            <span class="hero-object hero-comb" aria-hidden="true"></span>
-            <span class="hand-note">ici, rien ne reste tout à fait pareil.</span>
-            <span class="hand-label">fait à la main</span>
-          </div>
-        </div>
-        <p class="scroll-note">défiler pour flâner</p>
-      </section>
-
-      <section class="intro-section" aria-labelledby="intro-title">
-        <p class="eyebrow">Une collection qui bouge</p>
-        <div>
-          <h2 id="intro-title">
-            Pas de catalogue figé.
-            <em>Des morceaux de vie</em>
-            qui passent par l'atelier avant de continuer leur chemin.
-          </h2>
-          <p class="paper-note">
-            Kaplou travaille par petites séries, parfois une seule pièce.
-            Revenez quand vous voulez : l'expérience sera différente.
-          </p>
-        </div>
-      </section>
-
-      <section id="nouveautes" class="new-section" aria-labelledby="new-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Arrivées récentes</p>
-            <h2 id="new-title">Nouveau dans l'atelier</h2>
-          </div>
-          <p>Les dernières pièces à avoir trouvé leur place sont ici.</p>
-        </div>
-        <div id="new-grid" class="new-grid"></div>
-      </section>
-
-      <section id="atelier" class="atelier-section" aria-labelledby="atelier-title">
-        <div class="section-heading atelier-heading">
-          <div>
-            <p class="eyebrow">Sur la table aujourd'hui</p>
-            <h2 id="atelier-title">L'atelier</h2>
-          </div>
-          <p>Touchez avec les yeux, prenez le temps d'apprendre l'histoire de l'objet, de lire les étiquettes, et de choisir celui qui vous accompagnera sur votre chemin...</p>
-        </div>
-
-        <div class="filters" role="tablist" aria-label="Filtrer les créations par catégorie">
-          <button class="filter-button is-active" type="button" role="tab" aria-selected="true" data-filter="Tout">Tout</button>
-          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="Dessins &amp; peintures">Dessins &amp; peintures</button>
-          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="Collages &amp; papier">Collages &amp; papier</button>
-          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="Sculptures">Sculptures</button>
-          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="Objets &amp; mobilier transformés">Objets &amp; mobilier transformés</button>
-          <span id="filter-count" class="filter-count">12 pièces visibles</span>
-        </div>
-
-        <div id="product-grid" class="product-grid" aria-live="polite"></div>
-      </section>
-
-      <section id="story" class="story-section" aria-labelledby="story-title">
-        <div id="story-image" class="story-image"></div>
-        <div class="story-copy">
-          <p class="eyebrow">Son histoire</p>
-          <h2 id="story-title"></h2>
-          <p id="story-subtitle" class="story-subtitle"></p>
-          <p id="story-text" class="story-text"></p>
-          <p id="story-note" class="story-note"></p>
-          <div class="story-actions">
-            <a id="story-adopt" class="button button-primary" href="#" target="_blank" rel="noreferrer">
-              Adopter cette pièce <span aria-hidden="true">↗</span>
-            </a>
-            <button id="story-next" class="text-button" type="button">
-              Découvrir la suivante <span aria-hidden="true">→</span>
-            </button>
-          </div>
-          <p id="stripe-note" class="stripe-note"></p>
-          <dl id="story-details" class="story-details"></dl>
-        </div>
-      </section>
-
-      <section class="how-section" aria-labelledby="how-title">
-        <div>
-          <p class="eyebrow">Le petit mode d'emploi</p>
-          <h2 id="how-title">Pas besoin de se presser.</h2>
-        </div>
-        <div class="how-list">
-          <article>
-            <span class="how-mark" aria-hidden="true">✳</span>
-            <div>
-              <h3>On se rencontre</h3>
-              <p>Vous découvrez une pièce, son histoire, ses petites traces. Les détails sont là pour être regardés.</p>
-            </div>
-          </article>
-          <article>
-            <span class="how-mark" aria-hidden="true">✳</span>
-            <div>
-              <h3>Vous lui faites une place</h3>
-              <p>Le bouton d'adoption ouvre directement le lien de paiement Stripe associé à la pièce.</p>
-            </div>
-          </article>
-          <article>
-            <span class="how-mark" aria-hidden="true">✳</span>
-            <div>
-              <h3>Elle part bien emballée</h3>
-              <p>Chaque objet est préparé par Kaplou, avec ses informations et une petite attention de l'atelier.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="a-propos" class="about-section" aria-labelledby="about-title">
-        <div class="about-drawing" aria-label="Croquis décoratif de l'atelier" role="img">
-          <svg viewBox="0 0 420 300" aria-hidden="true">
-            <path d="M58 236C78 182 75 96 135 69c43-20 91-5 121 24 39 39 44 86 78 128" />
-            <path d="M96 232c46-19 88-11 109 6 21 17 74 6 98-17" />
-            <path d="M117 101c14 18 33 22 49 9M219 103c14 16 30 16 43 0" />
-            <circle cx="160" cy="157" r="4" />
-            <circle cx="235" cy="157" r="4" />
-          </svg>
-          <span>croquis de la table · à compléter</span>
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow">À propos</p>
-          <h2 id="about-title">Bonjour,<br /><em>moi c'est Kaplou.</em></h2>
-          <div class="about-text">
-            <p>Je suis artiste plasticien, je peins, je sculpte et j'aime fabriquer des choses à partir de ce qui existe déjà : un bout de bois, une couleur mal mélangée, une assiette esseulée, une image découpée dans un vieux livres.</p>
-            <p>L'atelier est petit et les pièces aussi, pour la plupart. Ce sont des objets qui ne cherchent pas à être parfaits. Ils cherchent une rencontre.</p>
-          </div>
-          <p class="about-quote">« Travailler avec les objets oubliés,<br />c'est ouvrir une porte sur mille et une histoires . »</p>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section" aria-labelledby="contact-title">
-        <div class="contact-introduction">
-          <p class="eyebrow">On se dit bonjour</p>
-          <h2 id="contact-title">Une question,<br /><em>une envie ?</em></h2>
-          <p>Pour demander une photo, parler d'une pièce ou simplement laisser un mot dans le carnet, le formulaire est ouvert.</p>
-          <div class="contact-placeholders">
-            <span>Atelier, Art en partage</span>
-            <span>Bailleul (59)</span>
-          </div>
-        </div>
-        <form id="contact-form" class="contact-form">
-          <label for="contact-name">Votre prénom</label>
-          <input id="contact-name" name="name" type="text" required placeholder="Comment vous appelez-vous ?" />
-          <label for="contact-email">Votre email</label>
-          <input id="contact-email" name="email" type="email" required placeholder="email@à-remplacer" />
-          <label for="contact-message">Le mot doux</label>
-          <textarea id="contact-message" name="message" rows="4" required placeholder="J'ai une question sur..."></textarea>
-          <button class="button button-light" type="submit">Envoyer le mot <span aria-hidden="true">↗</span></button>
-          <p id="form-status" class="form-status" role="status" hidden>
-            Merci. Dans la version en ligne, ce formulaire sera relié à l'email de l'atelier.
-          </p>
-        </form>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a href="#top" class="footer-brand">Les petites créations de Kaplou<span>.</span></a>
-      <p>Objets avec une histoire · depuis l'atelier</p>
-      <span class="footer-stamp">pas de panier<br />juste un coup de cœur</span>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Les petites créations de Kaplou : pièces uniques, petites séries et objets transformés à Bailleul.">
+  <title>Les petites créations de Kaplou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top"><span class="brand-mark">K</span><span>Les petites créations<br>de Kaplou</span></a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="main-navigation">
+    <a href="#nouveautes">Fraîchement posées</a><a href="#atelier">Sur la table</a><a href="#a-propos">Kaplou</a><a href="#contact">Écrire</a>
+  </nav>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Bailleul · pièces uniques & petites séries</p>
+    <h1>Les petites<br><em>créations</em><br>de Kaplou.</h1>
+    <p class="hero-intro">Des objets trouvés, fabriqués, transformés. Quelques pièces à la fois, chacune avec son histoire et l'envie d'aller vivre ailleurs.</p>
+    <a class="quiet-link" href="#nouveautes">Entrer dans l'atelier <span>↓</span></a>
+  </div>
+  <div class="hero-table" aria-label="Emplacement pour une future photographie de l'atelier">
+    <div class="tile-field"></div><div class="paper-card"><span>photo de l'atelier</span><strong>à venir</strong></div>
+    <p class="hand-note">regarder, flâner,<br>et peut-être s'attacher.</p>
+  </div>
+  <span class="scroll-note">défiler pour flâner</span>
+</section>
+<section class="manifesto">
+  <p class="eyebrow">Une collection qui bouge</p>
+  <h2>Pas de catalogue à rallonge.<br><em>Seulement ce qui est là, aujourd'hui.</em></h2>
+  <p>Une pièce unique, une petite série, un objet sauvé puis transformé. Quand quelque chose part, une place se libère sur l'étagère.</p>
+</section>
+<section id="nouveautes" class="new-section">
+  <header class="section-heading"><div><p class="eyebrow">Arrivées à l'atelier</p><h2>Fraîchement<br>posées.</h2></div><p>Les dernières créations à avoir trouvé une place sur la table.</p></header>
+  <div id="new-grid" class="new-grid"></div>
+</section>
+<section id="atelier" class="atelier-section">
+  <header class="section-heading"><div><p class="eyebrow">Regarder à son rythme</p><h2>Sur la table.</h2></div><p>Les objets disponibles aujourd'hui, et quelques traces de ceux qui sont déjà partis.</p></header>
+  <div class="filters"><button class="filter-button is-active" data-filter="Tout">Tout</button><button class="filter-button" data-filter="Dessins & peintures">Dessins</button><button class="filter-button" data-filter="Collages & papier">Papier</button><button class="filter-button" data-filter="Sculptures">Sculptures</button><button class="filter-button" data-filter="Objets & mobilier transformés">Objets & mobilier</button><span id="filter-count"></span></div>
+  <div id="product-grid" class="product-grid"></div>
+</section>
+<section id="story" class="story-section">
+  <button class="story-close" type="button" aria-label="Fermer">×</button>
+  <div id="story-image" class="story-image"></div>
+  <div class="story-copy">
+    <p class="eyebrow">Le carnet de l'objet</p><h2 id="story-title"></h2><p id="story-subtitle" class="story-subtitle"></p>
+    <div class="price-line"><strong id="story-price"></strong><span id="story-delivery"></span></div>
+    <div class="story-chapter"><span>01</span><div><h3>Son histoire</h3><p id="story-text"></p></div></div>
+    <div class="story-chapter"><span>02</span><div><h3>Son parcours</h3><p id="story-journey"></p></div></div>
+    <dl id="story-details" class="story-details"></dl>
+    <p id="story-note" class="story-note"></p>
+    <a id="story-adopt" class="adopt-button" href="#" target="_blank" rel="noreferrer">Adopter cette pièce <span>↗</span></a>
+    <p id="stripe-note" class="stripe-note"></p>
+  </div>
+</section>
+<section class="practical">
+  <p class="eyebrow">Simplement</p><div class="practical-grid"><article><span>01</span><h3>Vous regardez</h3><p>Photos, matières, dimensions et histoire. Prenez votre temps.</p></article><article><span>02</span><h3>Le coup de cœur</h3><p>Pour les petites créations, le paiement s'ouvre directement avec Stripe.</p></article><article><span>03</span><h3>Elle part</h3><p>Petits objets : livraison incluse. Mobilier : retrait à Bailleul uniquement.</p></article></div>
+</section>
+<section id="a-propos" class="about-section">
+  <div class="about-photo"><span>portrait de Kaplou<br>à intégrer après validation</span></div>
+  <div class="about-copy"><p class="eyebrow">Derrière les objets</p><h2>Bonjour,<br><em>moi c'est Kaplou.</em></h2><p>Je peins, je sculpte et j'aime fabriquer à partir de ce qui existe déjà. Un bout de bois, un papier oublié, une matière, une couleur ou simplement une idée qui insiste.</p><p>Les petites créations sont imaginées et fabriquées à Bailleul, au sein de l'Atelier Art en Partage. Ici, les objets ne cherchent pas tellement la perfection. Ils cherchent surtout une rencontre.</p><p class="hand-note inline">les choses ont parfois plusieurs vies.</p></div>
+</section>
+<section id="contact" class="contact-section"><div><p class="eyebrow">On se dit bonjour</p><h2>Une question<br>sur une pièce ?</h2><p>Pour demander une photo supplémentaire, parler d'un objet ou d'un retrait à Bailleul.</p></div><form id="contact-form"><label>Votre prénom<input name="name" required></label><label>Votre email<input name="email" type="email" required></label><label>Votre message<textarea name="message" rows="5" required></textarea></label><button type="submit">Envoyer le mot ↗</button><p id="form-status" hidden>Merci. Le formulaire sera relié à l'adresse de l'atelier dans la version finale.</p></form></section>
+</main>
+<footer><strong>Les petites créations de Kaplou.</strong><span>Pièces uniques · petites séries · Bailleul</span><i>pas de panier<br>juste un coup de cœur</i></footer>
+<script src="script.js"></script>
+</body></html>
