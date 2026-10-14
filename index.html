@@ -1,72 +1,12 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Les petites créations de Kaplou : pièces uniques, petites séries et objets transformés à Bailleul.">
-  <title>Les petites créations de Kaplou</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tiles.css?v=4">
-</head>
-<body>
-<header class="site-header">
-  <a class="brand" href="#top"><span class="brand-mark">K</span><span>Les petites créations<br>de Kaplou</span></a>
-  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-  <nav class="main-navigation">
-    <a href="#nouveautes">Fraîchement posées</a><a href="#atelier">Sur la table</a><a href="#a-propos">Kaplou</a><a href="#contact">Écrire</a>
-  </nav>
-</header>
-<main id="top">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">Bailleul · pièces uniques & petites séries</p>
-    <h1>Les petites<br><em>créations</em><br>de Kaplou.</h1>
-    <p class="hero-intro">Des objets trouvés, fabriqués, transformés. Quelques pièces à la fois, chacune avec son histoire et l'envie d'aller vivre ailleurs.</p>
-    <a class="quiet-link" href="#nouveautes">Entrer dans l'atelier <span>↓</span></a>
-  </div>
-  <div class="hero-table" aria-label="Emplacement pour une future photographie de l'atelier">
-    <div class="tile-field"></div><div class="paper-card"><span>photo de l'atelier</span><strong>à venir</strong></div>
-    <p class="hand-note">regarder, flâner,<br>et peut-être s'attacher.</p>
-  </div>
-  <span class="scroll-note">défiler pour flâner</span>
-</section>
-<section class="manifesto">
-  <p class="eyebrow">Une collection qui bouge</p>
-  <h2>Pas de catalogue à rallonge.<br><em>Seulement ce qui est là, aujourd'hui.</em></h2>
-  <p>Une pièce unique, une petite série, un objet sauvé puis transformé. Quand quelque chose part, une place se libère sur l'étagère.</p>
-</section>
-<section id="nouveautes" class="new-section">
-  <header class="section-heading"><div><p class="eyebrow">Arrivées à l'atelier</p><h2>Fraîchement<br>posées.</h2></div><p>Les dernières créations à avoir trouvé une place sur la table.</p></header>
-  <div id="new-grid" class="new-grid"></div>
-</section>
-<section id="atelier" class="atelier-section">
-  <header class="section-heading"><div><p class="eyebrow">Regarder à son rythme</p><h2>Sur la table.</h2></div><p>Les objets disponibles aujourd'hui, et quelques traces de ceux qui sont déjà partis.</p></header>
-  <div class="filters"><button class="filter-button is-active" data-filter="Tout">Tout</button><button class="filter-button" data-filter="Dessins & peintures">Dessins</button><button class="filter-button" data-filter="Collages & papier">Papier</button><button class="filter-button" data-filter="Sculptures">Sculptures</button><button class="filter-button" data-filter="Objets & mobilier transformés">Objets & mobilier</button><span id="filter-count"></span></div>
-  <div id="product-grid" class="product-grid"></div>
-</section>
-<section id="story" class="story-section">
-  <button class="story-close" type="button" aria-label="Fermer">×</button>
-  <div id="story-image" class="story-image"></div>
-  <div class="story-copy">
-    <p class="eyebrow">Le carnet de l'objet</p><h2 id="story-title"></h2><p id="story-subtitle" class="story-subtitle"></p>
-    <div class="price-line"><strong id="story-price"></strong><span id="story-delivery"></span></div>
-    <div class="story-chapter"><span>01</span><div><h3>Son histoire</h3><p id="story-text"></p></div></div>
-    <div class="story-chapter"><span>02</span><div><h3>Son parcours</h3><p id="story-journey"></p></div></div>
-    <dl id="story-details" class="story-details"></dl>
-    <p id="story-note" class="story-note"></p>
-    <a id="story-adopt" class="adopt-button" href="#" target="_blank" rel="noreferrer">Adopter cette pièce <span>↗</span></a>
-    <p id="stripe-note" class="stripe-note"></p>
-  </div>
-</section>
-<section class="practical">
-  <p class="eyebrow">Simplement</p><div class="practical-grid"><article><span>01</span><h3>Vous regardez</h3><p>Photos, matières, dimensions et histoire. Prenez votre temps.</p></article><article><span>02</span><h3>Le coup de cœur</h3><p>Pour les petites créations, le paiement s'ouvre directement avec Stripe.</p></article><article><span>03</span><h3>Elle part</h3><p>Petits objets : livraison incluse. Mobilier : retrait à Bailleul uniquement.</p></article></div>
-</section>
-<section id="a-propos" class="about-section">
-  <div class="about-photo"><img src="images/Kaplou%20Atelier%2004%20oct.%202026%2C%2009_33_46.png" alt="Kaplou peignant une grande toile marine dans son atelier à Bailleul" loading="lazy" style="display:block;width:100%;height:100%;min-height:620px;object-fit:cover;object-position:center"></div>
-  <div class="about-copy"><p class="eyebrow">Derrière les objets</p><h2>Bonjour,<br><em>moi c'est Kaplou.</em></h2><p class="hand-note inline">Originaire des terrils,<br>je me suis perdu au pied du Mont Noir.</p><p>Je peins, je sculpte et j'aime fabriquer à partir de ce qui existe déjà. Un bout de bois, un papier oublié, une matière, une couleur ou simplement une idée qui insiste.</p><p>Les petites créations sont imaginées et fabriquées à Bailleul, au sein de l'Atelier Art en Partage. Ici, les objets ne cherchent pas tellement la perfection. Ils cherchent surtout une rencontre.</p><p class="hand-note inline">les choses ont parfois plusieurs vies.</p></div>
-</section>
-<section id="contact" class="contact-section"><div><p class="eyebrow">On se dit bonjour</p><h2>Une question<br>sur une pièce ?</h2><p>Pour demander une photo supplémentaire, parler d'un objet ou d'un retrait à Bailleul.</p></div><form id="contact-form"><label>Votre prénom<input name="name" required></label><label>Votre email<input name="email" type="email" required></label><label>Votre message<textarea name="message" rows="5" required></label><button type="submit">Envoyer le mot ↗</button><p id="form-status" hidden>Merci. Le formulaire sera relié à l'adresse de l'atelier dans la version finale.</p></form></section>
-</main>
-<footer><strong>Les petites créations de Kaplou.</strong><span>Pièces uniques · petites séries · Bailleul</span><i>pas de panier<br>juste un coup de cœur</i></footer>
-<script src="script.js"></script>
-</body></html>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Kaplou, artiste plasticien à Bailleul. Peintures, sculptures, recherches et œuvres originales disponibles."><title>Kaplou · Artiste plasticien</title><link rel="stylesheet" href="refonte.css"></head><body>
+<header class="site-header"><a class="signature" href="#accueil">Kaplou<span class="dot">.</span><small>artiste plasticien</small></a><button class="menu-button" aria-expanded="false" aria-controls="nav">Menu <span>☰</span></button><nav id="nav"><a href="#oeuvres">Œuvres</a><a href="#disponibles">Œuvres disponibles</a><a href="#demarche">Démarche</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav></header>
+<main id="accueil"><section class="hero"><div class="hero-text"><p class="eyebrow">Bailleul · Hauts-de-France</p><h1>La matière,<br><em>le vivant</em><br>et la couleur.</h1><p>Je peins, je sculpte et j'explore les matières pour donner forme à des histoires inspirées du monde vivant.</p><div class="actions"><a class="button primary" href="#oeuvres">Découvrir mon travail ↗</a><a class="button quiet" href="#disponibles">Voir les œuvres disponibles →</a></div></div><div class="hero-photo"><img src="images/Kaplou%20Atelier%2004%20oct.%202026%2C%2009_33_46.png" alt="Kaplou en train de peindre dans son atelier"><span class="photo-caption">À l'atelier, Bailleul</span></div></section>
+<section id="oeuvres" class="section"><div class="section-heading"><div><p class="eyebrow">01 / Sélection</p><h2>Des œuvres,<br><em>des rencontres.</em></h2></div><p>Peintures, sculptures et recherches plastiques. Une sélection de réalisations, sans catalogue interminable.</p></div><div class="work-grid">
+<article class="work"><div class="work-image"><img src="https://raw.githubusercontent.com/kaplou/Atelier-Art-en-partage/main/images/portfolio/elan-profondeurs.webp" alt="Élan des profondeurs, œuvre de Kaplou" loading="lazy"></div><h3>Élan des profondeurs</h3><p>Peinture · Portfolio</p></article>
+<article class="work"><div class="work-image"><img src="https://raw.githubusercontent.com/kaplou/Atelier-Art-en-partage/main/images/portfolio/pla-kat.webp" alt="Pla-kat, œuvre de Kaplou" loading="lazy"></div><h3>Pla-kat</h3><p>Œuvre originale · Portfolio</p></article>
+<article class="work"><div class="work-image"><img src="https://raw.githubusercontent.com/kaplou/Atelier-Art-en-partage/main/images/portfolio/cygne-noir-valide.webp" alt="Cygne noir, œuvre de Kaplou" loading="lazy"></div><h3>Cygne noir</h3><p>Peinture · Portfolio</p></article></div><p class="small-note">Sélection de portfolio : la disponibilité de ces œuvres n'est pas indiquée.</p></section>
+<section id="disponibles" class="section available"><div class="section-heading"><div><p class="eyebrow">02 / Acquérir une œuvre</p><h2>Œuvres <em>disponibles.</em></h2></div><p>Pièces uniques, créations originales et éditions limitées. Chaque œuvre aura sa fiche, ses photographies et son histoire.</p></div><div class="sale-placeholder"><div class="sale-icon">✳</div><div><h3>La sélection se prépare.</h3><p>Les premières fiches d'œuvres seront publiées ici avec leurs prix, dimensions, détails et liens de paiement Stripe.</p><p class="small-note">Aucun prix ni lien de paiement fictif : seules les œuvres réellement mises en vente apparaîtront.</p></div></div><div class="gallery-demo"><div><p class="eyebrow">Présentation prévue pour chaque œuvre</p><h3>Une œuvre, plusieurs regards.</h3><p>Photographie entière, détail de matière, vue de profil et mise en situation. Faites défiler les images horizontalement.</p></div><div class="swipe-gallery" aria-label="Exemple de galerie photo défilante"><figure><img src="https://raw.githubusercontent.com/kaplou/Atelier-Art-en-partage/main/images/portfolio/elan-profondeurs.webp" alt="Vue d'ensemble d'une œuvre"><figcaption>01 / Vue d'ensemble</figcaption></figure><figure><img src="https://raw.githubusercontent.com/kaplou/Atelier-Art-en-partage/main/images/portfolio/elan-profondeurs-detail.webp" alt="Détail de l'œuvre"><figcaption>02 / Détail</figcaption></figure></div></div></section>
+<section id="demarche" class="section split"><div class="text-block"><p class="eyebrow">03 / Démarche</p><h2>Observer.<br>Explorer.<br><em>Transformer.</em></h2><p>Le monde animal et végétal nourrit mes recherches. Je travaille la couleur, le mouvement et les matières, en mêlant peinture, sculpture et expérimentations.</p><p>Chaque pièce cherche à provoquer une rencontre : un étonnement, une émotion, une question.</p></div><div class="material-panel"><img src="images/Mur%20de%20carreaux%20verts%20%C3%A9maill%C3%A9s.png" alt="Texture de carreaux verts émaillés" loading="lazy"></div></section>
+<section id="parcours" class="section about"><div><p class="eyebrow">04 / L'artiste</p><h2>Bonjour,<br><em>moi c'est Kaplou.</em></h2></div><div><p>Artiste plasticien installé à Bailleul, dans les Hauts-de-France, je développe un travail autour du vivant, de la couleur et des matières.</p><p>Mon atelier, <strong>Atelier Art en Partage</strong>, est un espace de création, de recherche et d'expérimentation.</p><p class="small-note">Parcours, expositions et dates à compléter avec des informations vérifiées.</p></div></section>
+<section id="contact" class="section contact"><p class="eyebrow">05 / Échanger</p><h2>Une œuvre vous parle ?<br><em>Écrivons la suite.</em></h2><p>Pour une œuvre, une exposition, une collaboration ou simplement une question.</p><a class="button primary" href="mailto:contact@atelierartenpartage.fr?subject=Contact%20depuis%20le%20site%20Kaplou">Me contacter ↗</a><p class="small-note">Adresse de contact à confirmer avant publication.</p></section></main>
+<footer><a class="signature" href="#accueil">Kaplou<span class="dot">.</span></a><p>Artiste plasticien · Atelier Art en Partage · Bailleul</p><p>© <span id="year"></span> Kaplou · Site en préparation</p></footer><script src="refonte.js"></script></body></html>
