@@ -7,3 +7,5 @@
 
 /* Présentation de démonstration fluide */
 .checkout-dialog{border:0;padding:0;width:min(470px,calc(100% - 32px));background:var(--paper);color:var(--ink);box-shadow:0 30px 90px #0004}.checkout-dialog::backdrop{background:rgba(23,30,27,.72);backdrop-filter:blur(5px)}.checkout-content{padding:clamp(35px,5vw,65px);position:relative}.checkout-content h2{font-size:clamp(40px,5vw,58px);margin:15px 0 25px}.checkout-demo{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:15px}.adoption-button{cursor:pointer}.artist-dialog .adoption-button{flex:none}
+
+.portfolio-external{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:clamp(28px,5vw,65px);background:var(--paper2);border:1px solid var(--line)}.portfolio-external p{max-width:580px;font-size:clamp(17px,2vw,21px);line-height:1.65;margin-bottom:26px}.portfolio-external-mark{font-family:var(--serif);font-size:clamp(90px,15vw,190px);line-height:1;color:var(--sage);opacity:.65}@media(max-width:600px){.portfolio-external-mark{display:none}}
